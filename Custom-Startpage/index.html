@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>user@home &gt; newtab</title>
+        <style>
+            html {
+                /*align-items: center;*/
+                background-color: #1d1f21;
+                color: #c5c8c6;
+                display: flex;
+                font: 22px/1 "Inconsolata", monospace;
+                height: 100%;
+                justify-content: center;
+            }
+            body {
+                background-color: #1d1f21;
+                border-radius: 2px;
+                box-shadow: 1px 1px 6px #1d1f2187;
+                color: #c5c8c6;
+                display: flex;
+                flex-direction: column;
+                min-height: 30ch;
+                min-width: 92vw;
+                padding: 2em;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            p span {
+                color: #b5bd68;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            a:focus,
+            a:hover {
+                font-weight: bold;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav{
+                column-gap: 2em;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 1em 0;
+            }
+
+            ul:nth-child(5n + 1) li:first-child {
+                color: #a54242;
+            }
+
+            ul:nth-child(5n + 2) li:first-child {
+                color: #de935f;
+            }
+
+            ul:nth-child(5n + 3) li:first-child {
+                color: #f0c674;
+            }
+
+            ul:nth-child(5n + 4) li:first-child {
+                color: #8c9440;
+            }
+
+           ul:nth-child(5n + 5) li:first-child {
+                color: #85678f;
+           }
+
+            li:first-child {
+                font-weight: bold;
+            }
+
+            li:last-child {
+                margin: 0 0 1em;
+            }
+
+            p #cursor{
+                background-color: #b5bd64;
+                animation: blink 2s infinite;
+            }
+
+            @keyframes blink {
+                0% {opacity : 0;}
+                49% {opacity : 0;}
+                50% {opacity : 1;}
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <p><span>user@home &gt; </span>newtab</p>
+        <nav>
+            <ul>
+                <li>general</li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox">GMail- Siddhartha Personal</a></li>
+                <li><a href="https://mail.google.com/mail/u/3/#inbox">GMail- Saanvi Personal</a></li>
+                <li><a href="https://drive.google.com">Google Drive</a></li>
+                <li><a href="https://photos.google.com">Google Photos</a></li>
+                <li><a href="https://keep.google.com">Google Keep</a></li>
+                
+            </ul>
+            <ul>
+                <li>education</li>
+                <li><a href="https://mail.google.com/mail/u/1/#inbox">GMail- Siddhartha DPS</a></li>
+                <li><a href="https://mail.google.com/mail/u/2/#inbox">GMail- Saanvi DPS</a></li>
+                <li><a href="https://classroom.google.com/u/1/">Classroom- Siddhartha</a></li>
+                <li><a href="https://classroom.google.com/u/2/">Classroom- Saanvi</a></li>
+                <li><a href="https://meet.google.com/">Google Meet</a></li>
+                <li><a href="https://dpsrkp.net/category/notices">DPSRKP Notices</a></li>
+
+            </ul>
+            <ul>
+                <li>programming</li>
+                <li><a href="https://github.com">Github</a></li>
+                <li><a href="https://vscode.dev">VS Code Online</a></li>
+                <li><a href="https://repl.it">Repl</a></li>
+                <li><a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a></li>
+                <li><a href="https://studio.code.org">Code.org</a></li>
+                
+            </ul>
+            <ul>
+                <li>entertainment</li>
+                <li><a href="https://youtube.com">Youtube</a></li>
+                <li><a href="https://open.spotify.com">Spotify</a></li>
+                <li><a href="https://music.youtube.com">YT Music</a></li>
+            </ul>
+        </nav>
+        <p><span>user@home &gt; </span> <span id="cursor">_</span></p>
+
+    </body>
+</html>
